@@ -39,4 +39,4 @@ def crawl_website(url):
         
 if __name__ == "__main__":
     url = input("Enter the URL of the Instagram account: ")
-    crawl_website(url
+    crawl_website(url)

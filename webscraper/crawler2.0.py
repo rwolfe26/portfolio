@@ -1,6 +1,6 @@
 ## Needs to be updated, instagram changes the class name often 
 
-## html parsing is out of date
+## html parsing class names are out of date
 
 import requests
 from bs4 import BeautifulSoup
@@ -12,7 +12,7 @@ def crawl_website(url):
         soup = BeautifulSoup(response.content, "html.parser")
         
         # Find username 
-        username_element = soup.find("h1", class_="rhpdm")  # Ensure correct class name
+        username_element = soup.find("h1", class_="rhpdm")  
         username = username_element.get_text() if username_element else "Not found"
         
         # Find bio 

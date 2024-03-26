@@ -5,7 +5,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-def crawl_website(url):
+def scrape_website(url):
     response = requests.get(url)
     
     if response.status_code == 200:

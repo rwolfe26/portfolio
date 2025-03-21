@@ -1,0 +1,232 @@
+:root {
+  --primary: #6366f1;
+  --primary-dark: #4f46e5;
+  --secondary: #0ea5e9;
+  --accent: #f472b6;
+  --background: #f8fafc;
+  --text: #1e293b;
+  --text-light: #64748b;
+  --white: #ffffff;
+  --gradient: linear-gradient(135deg, var(--primary), var(--secondary));
+  --gradient-hover: linear-gradient(135deg, var(--primary-dark), var(--secondary));
+  --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Modern Reset Additions */
+::selection {
+  background: var(--primary);
+  color: var(--white);
+}
+
+/* Navbar Styling */
+.navbar {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.navbar-shrink {
+  background: rgba(255, 255, 255, 0.95) !important;
+}
+
+.navbar-header h1 a {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+/* Hero Section */
+#text-carousel-intro-section {
+  background: var(--gradient);
+  position: relative;
+  overflow: hidden;
+}
+
+#text-carousel-intro-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.caption h1 {
+  font-size: 4.5rem;
+  font-weight: 800;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-blank {
+  background: var(--white);
+  color: var(--primary);
+  border-radius: 8px !important;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.btn-blank:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* About Section Cards */
+.rotate-box-1 {
+  background: var(--white);
+  border-radius: 16px !important;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  height: 100%;
+}
+
+.rotate-box-1:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.rotate-box-icon {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Skills Section */
+.progress {
+  height: 12px;
+  border-radius: 6px !important;
+  background: #e2e8f0;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background: var(--gradient);
+  border-radius: 6px !important;
+  transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Portfolio Section */
+.portfolio_single_content {
+  border-radius: 16px !important;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.portfolio_single_content:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.portfolio_menu ul li a {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px !important;
+  transition: var(--transition);
+}
+
+.portfolio_menu ul li a:hover,
+.portfolio_menu ul li a.active {
+  background: var(--gradient);
+  color: var(--white);
+}
+
+/* Contact Section */
+.contact-form .form-control {
+  background: var(--white);
+  border: 1px solid #e2e8f0;
+  border-radius: 8px !important;
+  padding: 1rem;
+  transition: var(--transition);
+}
+
+.contact-form .form-control:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.contact-form button {
+  background: var(--gradient);
+  color: var(--white);
+  padding: 1rem 2rem;
+  border-radius: 8px !important;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.contact-form button:hover {
+  background: var(--gradient-hover);
+  transform: translateY(-2px);
+}
+
+/* Social Icons */
+.social-links a {
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient);
+  border-radius: 50% !important;
+  color: var(--white);
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: var(--transition);
+}
+
+.social-links a:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Animations */
+.fadeInUp {
+  animation: fadeInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scroll to Top Button */
+.scrolltotop {
+  background: var(--gradient);
+  color: var(--white);
+  width: 45px;
+  height: 45px;
+  border-radius: 50% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.scrolltotop:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Loading Animation */
+.loading-dots .dot {
+  background: var(--white);
+}
+
+/* Particle Effects */
+.particles {
+  opacity: 0.3;
+  mix-blend-mode: screen;
+}

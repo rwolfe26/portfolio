@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate Profile Image</title>
+</head>
+<body>
+    <canvas id="canvas" width="400" height="400"></canvas>
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+
+        // Set background
+        ctx.fillStyle = '#2563eb';
+        ctx.fillRect(0, 0, 400, 400);
+
+        // Add gradient overlay
+        const gradient = ctx.createLinearGradient(0, 0, 400, 400);
+        gradient.addColorStop(0, 'rgba(29, 78, 216, 0.8)');
+        gradient.addColorStop(1, 'rgba(37, 99, 235, 0.8)');
+        ctx.fillStyle = gradient;
+        ctx.fillRect(0, 0, 400, 400);
+
+        // Add initials
+        ctx.fillStyle = '#ffffff';
+        ctx.font = 'bold 150px Inter, sans-serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText('RW', 200, 200);
+
+        // Save the image
+        const link = document.createElement('a');
+        link.download = 'profile.png';
+        link.href = canvas.toDataURL();
+        link.click();
+    </script>
+</body>
+</html>

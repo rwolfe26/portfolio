@@ -1,0 +1,724 @@
+
+~~~Whole Dataset~~~
+              appid    price_usd  release_year  review_score   review_count  \
+count  4.600000e+03  4600.000000   2983.000000    4600.00000    4600.000000   
+mean   1.530989e+06     5.010291   2019.835736       0.65622    1049.358696   
+std    9.607985e+05     7.231696      3.141825       0.18999    8876.129153   
+min    2.341900e+05     0.000000   2013.000000       0.00000       0.000000   
+25%    6.661850e+05     1.990000   2017.000000       0.50000       2.000000   
+50%    1.322215e+06     3.600000   2020.000000       0.59000      22.000000   
+75%    2.760618e+06     4.990000   2023.000000       0.84000     179.000000   
+max    3.660320e+06   194.990000   2028.000000       1.00000  391477.000000   
+
+        avg_playtime   med_playtime      cluster  
+count    4600.000000    4600.000000  4600.000000  
+mean      129.509348     139.528043     6.946522  
+std      2280.838230    2948.293736     2.614328  
+min         0.000000       0.000000     0.000000  
+25%         0.000000       0.000000     4.000000  
+50%         0.000000       0.000000     9.000000  
+75%         0.000000       0.000000     9.000000  
+max    127774.000000  164772.000000     9.000000  
+
+Genre Relative Frequency:
+ genres_official
+Indie                    0.561957
+Adventure                0.443696
+Action                   0.328696
+Casual                   0.178261
+Simulation               0.115000
+RPG                      0.105435
+Free To Play             0.071522
+Strategy                 0.071087
+Early Access             0.047174
+Violent                  0.020000
+Gore                     0.016739
+Massively Multiplayer    0.013043
+Sports                   0.007609
+Nudity                   0.005217
+Racing                   0.004783
+Sexual Content           0.004348
+Software Training        0.001087
+Animation & Modeling     0.000652
+Design & Illustration    0.000652
+Movie                    0.000435
+Name: count, dtype: float64
+
+Tag Relative Frequency:
+ user_tags
+Horror                  0.808913
+Adventure               0.644783
+Indie                   0.616087
+Singleplayer            0.599565
+Action                  0.497609
+Psychological Horror    0.484783
+Atmospheric             0.419348
+First-Person            0.368043
+Story Rich              0.311304
+Survival Horror         0.289565
+Exploration             0.286087
+Dark                    0.280000
+Puzzle                  0.275000
+3D                      0.271087
+Casual                  0.263261
+Mystery                 0.222826
+2D                      0.217609
+Action-Adventure        0.193696
+Gore                    0.183261
+Survival                0.178043
+Name: count, dtype: float64
+
+
+~~~Cluster Summary~~~
+
+Size Range: 2656
+
+Price Range: 20.28
+
+Review Range: 0.4424999999999999
+
+Number of Singlets: 2
+
+Percent Singlets: 0.2
+
+Largest 5
+ Cluster ID  Size
+          9  2657
+          3  1129
+          7   286
+          5   205
+          6   197
+
+Smallest 5
+ Cluster ID  Size
+          1     1
+          8     1
+          2     4
+          0    13
+          4   107
+
+Top 5 Average Review Score
+ Cluster ID  Average Review Score
+          2              0.942500
+          3              0.742090
+          0              0.723846
+          7              0.697273
+          4              0.679346
+
+Bottom 5 Average Review Score
+ Cluster ID  Average Review Score
+          1              0.500000
+          8              0.500000
+          9              0.615841
+          5              0.641220
+          6              0.643452
+
+Top 5 Most Expensive
+ Cluster ID  Average Price (USD)
+          1            23.950000
+          2            15.145000
+          8             9.430000
+          0             8.038462
+          6             5.994975
+~~~Cluster 0~~~
+              appid  price_usd  release_year  review_score  review_count  \
+count  1.300000e+01  13.000000      8.000000     13.000000     13.000000   
+mean   1.436568e+06   8.038462   2020.625000      0.723846   2795.384615   
+std    9.006313e+05   9.882749      3.377975      0.221493   7209.212400   
+min    4.482800e+05   0.000000   2016.000000      0.380000      0.000000   
+25%    7.268300e+05   3.600000   2017.750000      0.500000     16.000000   
+50%    1.360620e+06   3.600000   2021.000000      0.870000    136.000000   
+75%    1.973460e+06   7.990000   2023.250000      0.910000    885.000000   
+max    2.849820e+06  36.990000   2025.000000      0.960000  26257.000000   
+
+       avg_playtime  med_playtime  cluster  
+count     13.000000     13.000000     13.0  
+mean     243.307692    215.769231      0.0  
+std      417.758380    410.808786      0.0  
+min        0.000000      0.000000      0.0  
+25%        0.000000      0.000000      0.0  
+50%        0.000000      0.000000      0.0  
+75%      331.000000    209.000000      0.0  
+max     1189.000000   1432.000000      0.0  
+
+Genre Relative Frequency:
+ genres_official
+Indie           0.769231
+Adventure       0.538462
+Action          0.384615
+Simulation      0.384615
+Strategy        0.076923
+Casual          0.076923
+Early Access    0.076923
+Name: count, dtype: float64
+
+Tag Relative Frequency:
+ user_tags
+Atmospheric             1.000000
+Singleplayer            0.923077
+First-Person            0.769231
+Submarine               0.692308
+Indie                   0.692308
+Horror                  0.692308
+Underwater              0.538462
+Adventure               0.538462
+Realistic               0.538462
+Simulation              0.538462
+3D                      0.461538
+Sci-fi                  0.461538
+Psychological Horror    0.461538
+Dark                    0.384615
+Action                  0.384615
+Story Rich              0.307692
+Walking Simulator       0.307692
+Historical              0.307692
+Mystery                 0.307692
+Immersive Sim           0.307692
+Name: count, dtype: float64
+
+
+~~~Cluster 1~~~
+           appid  price_usd  release_year  review_score  review_count  \
+count        1.0       1.00           1.0           1.0           1.0   
+mean   1452050.0      23.95        2020.0           0.5           0.0   
+std          NaN        NaN           NaN           NaN           NaN   
+min    1452050.0      23.95        2020.0           0.5           0.0   
+25%    1452050.0      23.95        2020.0           0.5           0.0   
+50%    1452050.0      23.95        2020.0           0.5           0.0   
+75%    1452050.0      23.95        2020.0           0.5           0.0   
+max    1452050.0      23.95        2020.0           0.5           0.0   
+
+       avg_playtime  med_playtime  cluster  
+count           1.0           1.0      1.0  
+mean            0.0           0.0      1.0  
+std             NaN           NaN      NaN  
+min             0.0           0.0      1.0  
+25%             0.0           0.0      1.0  
+50%             0.0           0.0      1.0  
+75%             0.0           0.0      1.0  
+max             0.0           0.0      1.0  
+
+Genre Relative Frequency:
+ genres_official
+Animation & Modeling     1.0
+Audio Production         1.0
+Design & Illustration    1.0
+Photo Editing            1.0
+Utilities                1.0
+Video Production         1.0
+Name: count, dtype: float64
+
+Tag Relative Frequency:
+ user_tags
+Design & Illustration    1.0
+Utilities                1.0
+Video Production         1.0
+Photo Editing            1.0
+Animation & Modeling     1.0
+Audio Production         1.0
+Software                 1.0
+Tutorial                 1.0
+FMV                      1.0
+Ambient                  1.0
+Education                1.0
+Software Training        1.0
+Horror                   1.0
+Multiplayer              1.0
+Cinematic                1.0
+Singleplayer             1.0
+Stylized                 1.0
+Family Friendly          1.0
+Beautiful                1.0
+Soundtrack               1.0
+Name: count, dtype: float64
+
+
+~~~Cluster 2~~~
+              appid  price_usd  release_year  review_score  review_count  \
+count  4.000000e+00   4.000000      3.000000      4.000000       4.00000   
+mean   1.330995e+06  15.145000   2021.000000      0.942500  240917.75000   
+std    5.176432e+05  15.484789      3.605551      0.048563  107038.63417   
+min    6.987800e+05   0.000000   2017.000000      0.870000  138716.00000   
+25%    1.169548e+06   2.700000   2019.500000      0.937500  192221.75000   
+50%    1.329240e+06  15.795000   2022.000000      0.965000  216739.00000   
+75%    1.490688e+06  28.240000   2023.000000      0.970000  265435.00000   
+max    1.966720e+06  28.990000   2024.000000      0.970000  391477.00000   
+
+       avg_playtime  med_playtime  cluster  
+count      4.000000      4.000000      4.0  
+mean     959.500000    509.750000      2.0  
+std      615.851443    383.118237      0.0  
+min      373.000000    105.000000      2.0  
+25%      455.500000    256.500000      2.0  
+50%      972.000000    480.500000      2.0  
+75%     1476.000000    733.750000      2.0  
+max     1521.000000    973.000000      2.0  
+
+Genre Relative Frequency:
+ genres_official
+Indie           0.75
+Adventure       0.50
+Free To Play    0.25
+Casual          0.25
+Action          0.25
+Simulation      0.25
+Name: count, dtype: float64
+
+Tag Relative Frequency:
+ user_tags
+Horror                  1.00
+Adventure               1.00
+Singleplayer            0.75
+Atmospheric             0.75
+First-Person            0.75
+Action                  0.75
+Exploration             0.75
+Indie                   0.50
+Action-Adventure        0.50
+Co-op                   0.50
+Survival Horror         0.50
+Sci-fi                  0.50
+Open World              0.50
+Cute                    0.50
+Psychological Horror    0.50
+Early Access            0.50
+Dating Sim              0.25
+Visual Novel            0.25
+Anime                   0.25
+Free to Play            0.25
+Name: count, dtype: float64
+
+
+~~~Cluster 3~~~
+              appid    price_usd  release_year  review_score  review_count  \
+count  1.129000e+03  1129.000000    773.000000   1129.000000   1129.000000   
+mean   1.445167e+06     5.146253   2019.517464      0.742090    994.310009   
+std    9.299020e+05     6.258666      3.071896      0.187832   3716.007158   
+min    2.835800e+05     0.000000   2014.000000      0.150000      0.000000   
+25%    6.370600e+05     1.590000   2017.000000      0.500000      6.000000   
+50%    1.290960e+06     3.600000   2019.000000      0.800000     73.000000   
+75%    2.537980e+06     5.990000   2022.000000      0.910000    434.000000   
+max    3.557290e+06    73.950000   2025.000000      1.000000  47564.000000   
+
+        avg_playtime   med_playtime  cluster  
+count    1129.000000    1129.000000   1129.0  
+mean      322.249779     372.397697      3.0  
+std      4549.611864    5898.051618      0.0  
+min         0.000000       0.000000      3.0  
+25%         0.000000       0.000000      3.0  
+50%         0.000000       0.000000      3.0  
+75%        75.000000      74.000000      3.0  
+max    127774.000000  164772.000000      3.0  
+
+Genre Relative Frequency:
+ genres_official
+Indie                    0.532329
+Adventure                0.518158
+Casual                   0.295837
+RPG                      0.148804
+Simulation               0.118689
+Free To Play             0.086802
+Action                   0.056687
+Strategy                 0.035430
+Violent                  0.016829
+Sexual Content           0.014172
+Gore                     0.013286
+Nudity                   0.013286
+Early Access             0.007086
+Sports                   0.005314
+Animation & Modeling     0.001771
+Massively Multiplayer    0.001771
+Utilities                0.000886
+Design & Illustration    0.000886
+Video Production         0.000886
+Game Development         0.000886
+Name: count, dtype: float64
+
+Tag Relative Frequency:
+ user_tags
+Adventure               0.759965
+Horror                  0.755536
+Singleplayer            0.722764
+Psychological Horror    0.657219
+Story Rich              0.646590
+Indie                   0.610275
+Atmospheric             0.488043
+2D                      0.461470
+Casual                  0.429584
+Mystery                 0.414526
+Visual Novel            0.405669
+Puzzle                  0.403012
+Anime                   0.336581
+Dark                    0.313552
+Female Protagonist      0.300266
+Multiple Endings        0.292294
+Point & Click           0.279894
+Exploration             0.277236
+Choices Matter          0.265722
+RPG                     0.251550
+Name: count, dtype: float64
+
+
+~~~Cluster 4~~~
+              appid   price_usd  release_year  review_score  review_count  \
+count  1.070000e+02  107.000000     56.000000    107.000000    107.000000   
+mean   1.653471e+06    3.669065   2020.392857      0.679346    537.224299   
+std    8.938955e+05    3.029492      2.780965      0.185046   2760.185478   
+min    2.341900e+05    0.000000   2013.000000      0.440000      0.000000   
+25%    7.829555e+05    2.990000   2018.000000      0.500000      1.000000   
+50%    1.387990e+06    3.600000   2020.500000      0.660000     18.000000   
+75%    2.755330e+06    3.600000   2023.000000      0.860000     90.500000   
+max    3.080910e+06   19.500000   2025.000000      1.000000  27324.000000   
+
+       avg_playtime  med_playtime  cluster  
+count    107.000000    107.000000    107.0  
+mean      29.196262     30.495327      4.0  
+std       85.864026     93.608516      0.0  
+min        0.000000      0.000000      4.0  
+25%        0.000000      0.000000      4.0  
+50%        0.000000      0.000000      4.0  
+75%        0.000000      0.000000      4.0  
+max      590.000000    604.000000      4.0  
+
+Genre Relative Frequency:
+ genres_official
+Indie           0.514019
+Adventure       0.411215
+Action          0.224299
+Casual          0.102804
+Free To Play    0.065421
+Simulation      0.056075
+RPG             0.046729
+Strategy        0.028037
+Early Access    0.018692
+Nudity          0.018692
+Violent         0.018692
+Name: count, dtype: float64
+
+Tag Relative Frequency:
+ user_tags
+Abstract                0.943925
+Horror                  0.775701
+Psychological Horror    0.635514
+Adventure               0.635514
+Singleplayer            0.551402
+Atmospheric             0.532710
+Indie                   0.467290
+Exploration             0.439252
+Puzzle                  0.429907
+First-Person            0.429907
+Surreal                 0.420561
+Dark                    0.392523
+3D                      0.355140
+Story Rich              0.336449
+Action                  0.327103
+Psychedelic             0.317757
+Psychological           0.308411
+Walking Simulator       0.280374
+Casual                  0.271028
+2D                      0.261682
+Name: count, dtype: float64
+
+
+~~~Cluster 5~~~
+              appid   price_usd  release_year  review_score  review_count  \
+count  2.050000e+02  205.000000    128.000000    205.000000    205.000000   
+mean   1.606220e+06    4.845024   2020.421875      0.641220    434.014634   
+std    9.586127e+05    4.730601      3.083125      0.184566   1502.749945   
+min    2.967100e+05    0.000000   2014.000000      0.090000      0.000000   
+25%    6.881200e+05    2.990000   2018.000000      0.500000      0.000000   
+50%    1.383490e+06    3.600000   2020.000000      0.500000     10.000000   
+75%    2.761550e+06    4.990000   2023.000000      0.830000    118.000000   
+max    3.312230e+06   24.990000   2026.000000      1.000000  12663.000000   
+
+       avg_playtime  med_playtime  cluster  
+count    205.000000    205.000000    205.0  
+mean      56.629268     59.414634      5.0  
+std      202.073805    213.892241      0.0  
+min        0.000000      0.000000      5.0  
+25%        0.000000      0.000000      5.0  
+50%        0.000000      0.000000      5.0  
+75%        0.000000      0.000000      5.0  
+max     2383.000000   2383.000000      5.0  
+
+Genre Relative Frequency:
+ genres_official
+Action                   0.658537
+Indie                    0.575610
+Adventure                0.321951
+RPG                      0.234146
+Casual                   0.165854
+Early Access             0.097561
+Strategy                 0.063415
+Free To Play             0.053659
+Simulation               0.043902
+Massively Multiplayer    0.009756
+Racing                   0.004878
+Violent                  0.004878
+Gore                     0.004878
+Name: count, dtype: float64
+
+Tag Relative Frequency:
+ user_tags
+Action              0.878049
+Horror              0.790244
+Singleplayer        0.570732
+Shooter             0.526829
+Action Roguelike    0.468293
+Indie               0.458537
+2D                  0.429268
+Roguelike           0.414634
+Roguelite           0.395122
+Pixel Graphics      0.370732
+Top-Down            0.370732
+Adventure           0.360976
+Zombies             0.346341
+Survival            0.336585
+Top-Down Shooter    0.326829
+Arcade              0.321951
+Survival Horror     0.297561
+Bullet Hell         0.292683
+Atmospheric         0.292683
+RPG                 0.287805
+Name: count, dtype: float64
+
+
+~~~Cluster 6~~~
+              appid   price_usd  release_year  review_score  review_count  \
+count  1.970000e+02  197.000000    120.000000    197.000000    197.000000   
+mean   1.600289e+06    5.994975   2020.158333      0.643452    526.741117   
+std    9.542438e+05    6.741172      3.292456      0.176066   1795.018410   
+min    4.031200e+05    0.000000   2015.000000      0.330000      0.000000   
+25%    6.668200e+05    3.600000   2017.000000      0.500000      0.000000   
+50%    1.378870e+06    3.600000   2020.000000      0.500000     13.000000   
+75%    2.769170e+06    6.490000   2024.000000      0.820000    223.000000   
+max    3.660320e+06   34.990000   2025.000000      1.000000  16620.000000   
+
+       avg_playtime  med_playtime  cluster  
+count    197.000000    197.000000    197.0  
+mean     137.020305    132.725888      6.0  
+std      548.142987    555.614714      0.0  
+min        0.000000      0.000000      6.0  
+25%        0.000000      0.000000      6.0  
+50%        0.000000      0.000000      6.0  
+75%        0.000000      0.000000      6.0  
+max     6467.000000   6467.000000      6.0  
+
+Genre Relative Frequency:
+ genres_official
+Strategy          0.487310
+Indie             0.451777
+RPG               0.380711
+Adventure         0.197970
+Casual            0.172589
+Simulation        0.152284
+Action            0.121827
+Free To Play      0.025381
+Early Access      0.020305
+Sports            0.015228
+Sexual Content    0.005076
+Violent           0.005076
+Name: count, dtype: float64
+
+Tag Relative Frequency:
+ user_tags
+Strategy                0.776650
+Horror                  0.725888
+RPG                     0.588832
+Singleplayer            0.538071
+Indie                   0.406091
+2D                      0.370558
+Psychological Horror    0.345178
+Turn-Based Combat       0.329949
+Turn-Based Strategy     0.314721
+Adventure               0.309645
+Turn-Based              0.284264
+Party-Based RPG         0.253807
+Atmospheric             0.248731
+Turn-Based Tactics      0.243655
+Story Rich              0.243655
+Casual                  0.233503
+Fantasy                 0.228426
+Dark                    0.208122
+Simulation              0.208122
+Tabletop                0.203046
+Name: count, dtype: float64
+
+
+~~~Cluster 7~~~
+              appid   price_usd  release_year  review_score  review_count  \
+count  2.860000e+02  286.000000    197.000000    286.000000    286.000000   
+mean   1.561560e+06    5.427552   2020.040609      0.697273   1221.444056   
+std    9.659374e+05   12.234701      3.105028      0.187982   5865.975952   
+min    2.825300e+05    0.000000   2014.000000      0.250000      0.000000   
+25%    6.815500e+05    1.990000   2017.000000      0.500000      2.000000   
+50%    1.333390e+06    3.600000   2020.000000      0.705000     24.500000   
+75%    2.767088e+06    4.990000   2023.000000      0.870000    194.000000   
+max    3.593180e+06  194.990000   2025.000000      1.000000  61542.000000   
+
+       avg_playtime  med_playtime  cluster  
+count    286.000000    286.000000    286.0  
+mean      80.458042     74.192308      7.0  
+std      198.443443    174.455468      0.0  
+min        0.000000      0.000000      7.0  
+25%        0.000000      0.000000      7.0  
+50%        0.000000      0.000000      7.0  
+75%       27.750000     28.750000      7.0  
+max     1746.000000    927.000000      7.0  
+
+Genre Relative Frequency:
+ genres_official
+Indie                    0.615385
+Action                   0.493007
+Adventure                0.454545
+Casual                   0.209790
+Free To Play             0.076923
+Simulation               0.041958
+RPG                      0.041958
+Strategy                 0.041958
+Racing                   0.024476
+Sports                   0.024476
+Early Access             0.020979
+Violent                  0.006993
+Gore                     0.006993
+Massively Multiplayer    0.003497
+Name: count, dtype: float64
+
+Tag Relative Frequency:
+ user_tags
+Platformer              0.786713
+Action                  0.779720
+Singleplayer            0.769231
+2D                      0.664336
+Adventure               0.653846
+Horror                  0.650350
+Indie                   0.632867
+Psychological Horror    0.503497
+2D Platformer           0.416084
+Difficult               0.405594
+Pixel Graphics          0.374126
+Atmospheric             0.363636
+Side Scroller           0.360140
+Casual                  0.328671
+Puzzle Platformer       0.300699
+Precision Platformer    0.290210
+Puzzle                  0.279720
+Action-Adventure        0.272727
+Physics                 0.258741
+Funny                   0.258741
+Name: count, dtype: float64
+
+
+~~~Cluster 8~~~
+           appid  price_usd  release_year  review_score  review_count  \
+count        1.0       1.00           1.0           1.0           1.0   
+mean   2634600.0       9.43        2023.0           0.5           0.0   
+std          NaN        NaN           NaN           NaN           NaN   
+min    2634600.0       9.43        2023.0           0.5           0.0   
+25%    2634600.0       9.43        2023.0           0.5           0.0   
+50%    2634600.0       9.43        2023.0           0.5           0.0   
+75%    2634600.0       9.43        2023.0           0.5           0.0   
+max    2634600.0       9.43        2023.0           0.5           0.0   
+
+       avg_playtime  med_playtime  cluster  
+count           1.0           1.0      1.0  
+mean            0.0           0.0      8.0  
+std             NaN           NaN      NaN  
+min             0.0           0.0      8.0  
+25%             0.0           0.0      8.0  
+50%             0.0           0.0      8.0  
+75%             0.0           0.0      8.0  
+max             0.0           0.0      8.0  
+
+Genre Relative Frequency:
+ genres_official
+RPG                      1.0
+Design & Illustration    1.0
+Education                1.0
+Web Publishing           1.0
+Game Development         1.0
+Name: count, dtype: float64
+
+Tag Relative Frequency:
+ user_tags
+RPG                      1.0
+Education                1.0
+Web Publishing           1.0
+Design & Illustration    1.0
+Game Development         1.0
+Horror                   1.0
+Fantasy                  1.0
+JRPG                     1.0
+Name: count, dtype: float64
+
+
+~~~Cluster 9~~~
+              appid    price_usd  release_year  review_score   review_count  \
+count  2.657000e+03  2657.000000   1696.000000   2657.000000    2657.000000   
+mean   1.548669e+06     4.862495   2019.863797      0.615841     792.211517   
+std    9.756787e+05     7.153324      3.171735      0.179081    5116.148993   
+min    2.534300e+05     0.000000   2014.000000      0.000000       0.000000   
+25%    6.728400e+05     1.990000   2017.000000      0.500000       1.000000   
+50%    1.322140e+06     3.600000   2020.000000      0.500000      17.000000   
+75%    2.767580e+06     4.990000   2023.000000      0.770000     108.000000   
+max    3.643600e+06   194.990000   2028.000000      1.000000  104386.000000   
+
+       avg_playtime  med_playtime  cluster  
+count   2657.000000   2657.000000   2657.0  
+mean      60.287919     57.861874      9.0  
+std      404.062510    463.839154      0.0  
+min        0.000000      0.000000      9.0  
+25%        0.000000      0.000000      9.0  
+50%        0.000000      0.000000      9.0  
+75%        0.000000      0.000000      9.0  
+max    16067.000000  21561.000000      9.0  
+
+Genre Relative Frequency:
+ genres_official
+Indie                    0.576967
+Adventure                0.439594
+Action                   0.420775
+Casual                   0.129846
+Simulation               0.124953
+Free To Play             0.069627
+RPG                      0.066240
+Early Access             0.066240
+Strategy                 0.060971
+Violent                  0.025216
+Gore                     0.022205
+Massively Multiplayer    0.020700
+Sports                   0.007151
+Racing                   0.005269
+Nudity                   0.002635
+Software Training        0.001505
+Sexual Content           0.001129
+Movie                    0.000753
+Accounting               0.000753
+Episodic                 0.000376
+Name: count, dtype: float64
+
+Tag Relative Frequency:
+ user_tags
+Horror                  0.857734
+Indie                   0.650734
+Adventure               0.642454
+Action                  0.638314
+Singleplayer            0.535943
+First-Person            0.518254
+Psychological Horror    0.435830
+Atmospheric             0.410990
+Survival Horror         0.404968
+3D                      0.371848
+Exploration             0.313511
+Dark                    0.272488
+Action-Adventure        0.251411
+Puzzle                  0.238615
+Survival                0.236733
+Gore                    0.217162
+Violent                 0.212646
+FPS                     0.208882
+Story Rich              0.202860
+Realistic               0.199849
+Name: count, dtype: float64
+
+

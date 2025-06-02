@@ -1,0 +1,81 @@
+/* Primary Colors */
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --accent: #f97316;
+  --accent-dark: #ea580c;
+}
+
+.btn-default,
+.btn-default:focus,
+.btn-default.focus,
+.btn-default:active,
+.btn-default.active {
+  background: var(--primary);
+  color: #fff;
+}
+
+.btn-default:hover {
+  background: var(--primary-dark);
+  color: #fff;
+}
+
+.btn-blank {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.btn-blank:hover:before,
+.btn-blank:focus:before,
+.btn-blank:active:before {
+  background: var(--accent);
+}
+
+.btn-blank:hover,
+.btn-blank:focus,
+.btn-blank:active {
+  color: #fff;
+}
+
+.rotate-box-1.square-icon .rotate-box-icon,
+.rotate-box-2.square-icon .rotate-box-icon {
+  background-color: var(--primary);
+}
+
+.rotate-box-1:hover.square-icon .rotate-box-icon,
+.rotate-box-2:hover.square-icon .rotate-box-icon {
+  background-color: var(--primary-dark);
+}
+
+.progress-bar {
+  background-color: var(--primary);
+}
+
+.portfolio_menu ul li a:hover,
+.portfolio_menu ul li a.active,
+.portfolio_menu ul li.active_prot_menu a {
+  background: var(--primary);
+  color: #fff;
+}
+
+.social-links a {
+  background: var(--primary);
+  color: #fff;
+}
+
+.social-links a:hover {
+  background: var(--primary-dark);
+}
+
+#text-carousel-intro-section {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+}
+
+.contact-form button {
+  background: var(--primary);
+  color: #fff;
+}
+
+.contact-form button:hover {
+  background: var(--primary-dark);
+}

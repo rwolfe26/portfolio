@@ -1,0 +1,181 @@
+/* Mobile-first responsive design */
+
+/* Base mobile styles */
+@media (max-width: 767px) {
+    html {
+        font-size: 14px;
+    }
+
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* Header */
+    .navbar-header h1 {
+        font-size: 1.5rem;
+        margin-top: 15px;
+    }
+
+    .navbar-toggle {
+        margin-top: 15px;
+    }
+
+    /* Intro section */
+    #text-carousel-intro-section {
+        height: 100vh;
+    }
+
+    .caption h1 {
+        font-size: 2.5rem;
+    }
+
+    .caption p {
+        font-size: 1.1rem;
+    }
+
+    /* About section */
+    .rotate-box-1 {
+        margin-bottom: 30px;
+    }
+
+    .rotate-box-1 .rotate-box-info p {
+        font-size: 0.9rem;
+    }
+
+    /* Skills section */
+    .skill-bar {
+        margin-bottom: 20px;
+    }
+
+    /* Portfolio section */
+    .portfolio_menu ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .portfolio_single_content {
+        margin-bottom: 20px;
+    }
+
+    /* Contact section */
+    .contact-info, .contact-form {
+        margin-bottom: 30px;
+    }
+
+    .social-links a {
+        margin: 0 10px;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    /* Portfolio section */
+    .portfolio_menu ul li {
+        margin: 0 5px;
+    }
+
+    .portfolio_single_content {
+        margin-bottom: 30px;
+    }
+}
+
+/* Small desktop styles */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+/* Animation adjustments for mobile */
+@media (max-width: 767px) {
+    .wow {
+        animation-name: none !important;
+        visibility: visible !important;
+    }
+}
+
+/* Particle canvas adjustments */
+@media (max-width: 767px) {
+    .particles {
+        opacity: 0.3;
+    }
+}
+
+/* Navigation adjustments */
+@media (max-width: 767px) {
+    .navbar-nav {
+        background: rgba(255, 255, 255, 0.95);
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .navbar-nav > li > a {
+        padding: 10px 20px;
+    }
+
+    .navbar-collapse {
+        border-top: none;
+        box-shadow: none;
+    }
+}
+
+/* Card layout adjustments */
+@media (max-width: 767px) {
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .contact-form.card,
+    .contact-info.card {
+        padding: 15px;
+    }
+}
+
+/* Button adjustments */
+@media (max-width: 767px) {
+    .btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Section spacing */
+@media (max-width: 767px) {
+    .page {
+        padding: 60px 0;
+    }
+
+    .extra-space-l {
+        height: 20px;
+    }
+
+    .page-header {
+        margin-bottom: 30px;
+    }
+}
+
+/* Image adjustments */
+@media (max-width: 767px) {
+    .img-profile {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Form adjustments */
+@media (max-width: 767px) {
+    .form-control {
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+
+    textarea.form-control {
+        height: 100px;
+    }
+}
